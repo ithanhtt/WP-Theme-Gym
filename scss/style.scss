@@ -1,0 +1,13 @@
+// Source
+@import 'source/variable';
+@import 'source/_mixin';
+@import 'source/_typography';
+// Header - Footer
+@import 'base/_default';
+@import 'base/_header';
+// Content  
+@import 'content/slider';
+@import 'content/_homepage_content';
+@import 'base/_footer';
+//Responsive
+@import 'base/_responsive';

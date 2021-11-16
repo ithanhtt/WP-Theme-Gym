@@ -1,0 +1,102 @@
+/* Banner */
+.banner {
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // height: 950px;
+    .banner-inner {
+        @include flex();
+        padding-left: 13px;
+    }
+    .text-banner {
+        color: $main-color;
+        margin-top: 306px;
+        max-width: 45%;
+        .title-banner {
+            @include font-bold(60px);
+            margin: 0;
+            transform: translateY(3px);
+        }
+        .s-title-banner {
+            @include font-bold(40px);
+            margin: 0;
+            transform: translateY(20px);
+        }
+        .deltai-banner {
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 120px;
+            line-height: 24px;
+            transform: translateY(49px);
+        }
+        .button-banner {
+            border: 2px solid #fff;
+            max-width: 85px;
+            padding: 14px 46px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .button-banner:hover {
+            border: 2px solid $select-color;
+            color: $select-color;
+            border-radius: 2px;
+            transition: 0.5s;
+        }
+    }
+    .model-banner {
+        margin-top: 50px;
+        margin-right: 13px;
+        transform: translate(45px, 140px);
+    }
+}
+/* Category Home */
+.category {
+    transform: translateY(-75px);
+    .row {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .cat-item {
+        @include col(33.3333%);
+        height: 250px;
+        &-img {
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: none;
+            }
+        }
+        &-content {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            text-align: center;
+            padding: 8%;
+            background-color: $main-color;
+            box-sizing: border-box;
+            .cat-icon {
+                // width: 325px;
+                // height: 75px;
+                // img {
+                //     text-align: center;
+                // }
+                #cat-icon-1 {
+                    padding-top: 15px;
+                }
+            }
+            .cat-title {
+                text-transform: uppercase;
+                @include font-bold(18px);
+                padding: 15px;
+            }
+            .cat-des {
+                font-weight: 400;
+                font-size: 14px;
+                color: $text-des;
+                padding: 4px;
+            }
+        }
+    }
+}

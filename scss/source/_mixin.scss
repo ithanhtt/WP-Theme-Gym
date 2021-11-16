@@ -1,0 +1,26 @@
+// Flexbox
+@mixin flex() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+// Font
+@mixin font-bold($font-size) {
+    font-weight: 600;
+    font-size: $font-size;
+}
+// Col
+@mixin col($width) {
+    width: $width;
+    box-sizing: border-box;
+}
+//Category Name
+@mixin size-cat() {
+    width: 380px;
+    height: 250px;
+}
+//Text Footer
+@mixin text-footer() {
+    font-size: 14px;
+    color: $text-des;
+}

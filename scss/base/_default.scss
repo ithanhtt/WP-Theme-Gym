@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+a, a:visited {
+    color: $main-color;
+    text-decoration: none;
+    &:hover {
+        color: $main-color;
+    }
+}
+h1 {
+    font-weight: bold;
+    font-size: 32px;
+}
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+h3, h4, h5, h6 {
+    font-size: 18px;
+    font-weight: bold;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+    }
+}
+/** Grid layout **/
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 -15px;
+}
+body {
+     font-family: 'Poppins';
+     font-size: 16px;
+     font-weight: normal;
+     background-color: $main-color;
+}
